@@ -1,0 +1,41 @@
+.preference {
+    padding: 30px 50px;
+    background-color: var(--secondary-background-color);
+
+    @media screen and (min-width: $tablet) {
+        padding: 40px 55px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 40px 65px;
+    }
+}
+
+.preference__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+// .preference__item {}
+
+.preference__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px auto;
+
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background-color: var(--logo-color);
+}
+
+.preference__icon {
+    fill: var(--secondary-text-color);
+}

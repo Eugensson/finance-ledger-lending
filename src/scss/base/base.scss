@@ -1,0 +1,110 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.63;
+    font-family: var(--main-font);
+    color: var(--primary-text-color);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 18px;
+        line-height: 1.61;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 1.23;
+    margin: 0;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 55px;
+        line-height: 1.2;
+    }
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.26;
+}
+
+h3 {
+    font-size: 23px;
+    line-height: 1.26;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 25px;
+        line-height: 1.28;
+    }
+}
+
+.text {
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
+        line-height: 1.65;
+    }
+}
+
+.descr {
+    font-size: 16px;
+    line-height: 1.6;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 17px;
+        line-height: 1.66;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+    }
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (min-width: $mobile) {
+        max-width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+    }
+}

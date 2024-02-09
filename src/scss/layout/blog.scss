@@ -1,0 +1,28 @@
+.blog {
+    display: block;
+
+    background-color: var(--blog-bachground-color);
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.blog__wrapper {
+    padding: 30px;
+
+    @media screen and (min-width: $tablet) {
+        width: 384px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 680px;
+        padding: 112px 30px;
+    }
+}
+
+.blog__time {
+    font-size: 20px;
+    line-height: 1.65;
+}

@@ -6,7 +6,7 @@
     <title>Finance Ledger</title>
   </head>
   <body>
-    <header>
+    <header class="container">
       <nav>
         <a href="#home">
           <svg width="35" height="35" aria-label="Logo company">
@@ -25,44 +25,50 @@
       </nav>
     </header>
       <main>
-        <section class="hero" id="home">
+        <section class="container hero" id="home">
           <h1>The sky is the limit</h1>
           <p>We provide world class financial assistance</p>
           <a href="#preference">Read more</a>
         </section>
-        <section class="preference" id="preference">
-          <h2>Our preference</h2>
-          <ul>
-            <li>
-              <svg width="35" height="35" aria-label="Icon building">
-                <use href="/images/icons.svg#university"></use>
-              </svg>
+        <section class="container preference" id="preference">
+          <h2 class="visually-hidden">Our preference</h2>
+          <ul class="preference__list">
+            <li class="preference__item">
+              <div class="preference__box">
+                <svg class="preference__icon" width="35" height="35" aria-label="Icon building">
+                  <use href="/images/icons.svg#university"></use>
+                </svg>
+              </div>              
               <h3>Investmant banking</h3>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus</p>
             </li>
-            <li>
-              <svg width="35" height="35" aria-label="Icon book-reader">
-                <use href="/images/icons.svg#book-reader"></use>
-              </svg>
+            <li class="preference__item">
+              <div class="preference__box">
+                <svg class="preference__icon" width="35" height="35" aria-label="Icon book-reader">
+                  <use href="/images/icons.svg#book-reader"></use>
+                </svg>
+              </div>
               <h3>Portfolio manager</h3>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus</p>
             </li>
-            <li>
-              <svg width="35" height="35" aria-label="Icon pencil">
-                <use href="/images/icons.svg#pencil"></use>
-              </svg>
+            <li class="preference__item">
+              <div class="preference__box">
+                <svg class="preference__icon" width="35" height="35" aria-label="Icon pencil">
+                  <use href="/images/icons.svg#pencil"></use>
+                </svg>
+              </div>              
               <h3>Tax & Custudio</h3>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus</p>
             </li>
           </ul>
         </section>
-        <section class="proposals" id="about">
+        <section class="container proposals" id="about">
           <p>What you are looking for</p>
           <h2>We provide bespoke solutions</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?</p>
           <a href="" target="_blank">Read more</a>
         </section>
-        <section class="cases" id="cases">
+        <section class="container cases" id="cases">
           <p>This is what we do</p>
           <h2>Business cases</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
@@ -77,130 +83,225 @@
             <li>Photo8</li>
           </ul>
         </section>
-        <section class="blog" id="blog">
-          <p>April 16 2020</p>
-          <h2>Blog post one</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?</p>
-          <a href="" target="_blank">Read our blog</a>
+        <section class="container blog" id="blog">
+          <picture>
+            <source srcset="/images/blog/desktop@1x.webp 1x, /images/blog/desktop@2x.webp 2x" media="(min-width: 1360px)"
+              type="image/webp">
+            <source srcset="/images/blog/tablet@1x.webp 1x, /images/blog/tablet@2x.webp 2x" media="(min-width: 768px)"
+              type="image/webp">
+            <source srcset="/images/blog/mobile@1x.webp 1x, /images/blog/mobile@2x.webp 2x" media="(max-width: 767px)"
+              type="image/webp">
+            <source srcset="/images/blog/desktop@1x.jpg 1x, /images/blog/desktop@2x.jpg 2x" media="(min-width: 1360px)"
+              type="image/jpeg">
+            <source srcset="/images/blog/tablet@1x.jpg 1x, /images/blog/tablet@2x.jpg 2x" media="(min-width: 768px)"
+              type="image/jpeg">
+            <source srcset="/images/blog/mobile@1x.jpg 1x, /images/blog/mobile@2x.jpg 2x" media="(max-width: 767px)"
+              type="image/jpeg">
+            <img src="/images/blog/desktop@1x.jpg" width="680" height="460" alt="Company employee at laptop">
+          </picture>
+          <article class="blog__wrapper">
+            <time datetime="2020-04-16" class="blog__time">April 16 2020</time>
+            <h2>Blog post one</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam
+              aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?</p>
+            <a href="" target="_blank">Read our blog</a>
+          </article>          
         </section>
-        <section class="team">
-          <p>Who we are</p>
-          <h2>Our professional team</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
-          <ul>
+        <section class="container team">
+          <p class="text team__text">Who we are</p>
+          <h2 class="team__title">Our professional team</h2>
+          <p class="descr team__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
+          <ul class="team__list">
             <li>
-              <ul>
-                <li><a href="https://www.facebook.com/" target="_blank" aria-label="Go to personal page on Facebook">
-                    <svg width="35" height="35">
-                      <use href="/images/icons.svg#facebook"></use>
-                    </svg>
-                  </a></li>
-                <li><a href="https://twitter.com/" target="_blank" aria-label="Go to personal page on Twitter">
-                    <svg width="35" height="35">
-                      <use href="/images/icons.svg#twitterX"></use>
-                    </svg>
-                  </a></li>
-                <li><a href="https://www.youtube.com/" target="_blank" aria-label="Go to personal page on YouTube">
-                    <svg width="35" height="35">
-                      <use href="/images/icons.svg#youtube"></use>
-                    </svg>
-                  </a></li>
-                <li><a href="https://www.linkedin.com/" target="_blank" aria-label="Go to personal page on LinkedIn">
-                    <svg width="35" height="35">
-                      <use href="/images/icons.svg#linkedin"></use>
-                    </svg>
-                  </a></li>
-              </ul>
-              <h3>John Doe</h3>
-              <p>President</p>
+              <div class="team__thumb">
+                <picture>
+                  <source srcset="/images/team/president-desktop@1x.webp 1x, /images/team/president-desktop@2x.webp 2x"
+                    media="(min-width: 1360px)" type="image/webp">
+                  <source srcset="/images/team/president-tablet@1x.webp 1x, /images/team/president-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="/images/team/president-mobile@1x.webp 1x, /images/team/president-mobile@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                  <source srcset="/images/team/president-desktop@1x.jpg 1x, /images/team/president-desktop@2x.jpg 2x"
+                    media="(min-width: 1360px)" type="image/jpeg">
+                  <source srcset="/images/team/president-tablet@1x.jpg 1x, /images/team/president-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpeg">
+                  <source srcset="/images/team/president-mobile@1x.jpg 1x, /images/team/president-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" type="image/jpeg">
+                  <img src="/images/team/president-desktop@1x.jpg" width="420" height="280" alt="President of company">
+                </picture>
+                <ul class="social__list social__team">
+                  <li><a class="social__link" href="https://www.facebook.com/" target="_blank"
+                      aria-label="Go to personal page on Facebook">
+                      <svg class="social__icon" width="35" height="35">
+                        <use href="/images/icons.svg#facebook"></use>
+                      </svg>
+                    </a></li>
+                  <li><a class="social__link" href="https://twitter.com/" target="_blank" aria-label="Go to personal page on Twitter">
+                      <svg class="social__icon" width="35" height="35">
+                        <use href="/images/icons.svg#twitterX"></use>
+                      </svg>
+                    </a></li>
+                  <li><a class="social__link" href="https://www.youtube.com/" target="_blank"
+                      aria-label="Go to personal page on YouTube">
+                      <svg class="social__icon" width="35" height="35">
+                        <use href="/images/icons.svg#youtube"></use>
+                      </svg>
+                    </a></li>
+                  <li><a class="social__link" href="https://www.linkedin.com/" target="_blank"
+                      aria-label="Go to personal page on LinkedIn">
+                      <svg class="social__icon" width="35" height="35">
+                        <use href="/images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a></li>
+                </ul>
+              </div>              
+              <h3 class="card__subtitle">John Doe</h3>
+              <p class="card__text">President</p>
             </li>
             <li>
-              <ul>
-                <li><a href="https://www.facebook.com/" target="_blank" aria-label="Go to personal page on Facebook">
-                    <svg width="35" height="35">
-                      <use href="/images/icons.svg#facebook"></use>
-                    </svg>
-                  </a></li>
-                <li><a href="https://twitter.com/" target="_blank" aria-label="Go to personal page on Twitter">
-                    <svg width="35" height="35">
-                      <use href="/images/icons.svg#twitterX"></use>
-                    </svg>
-                  </a></li>
-                <li><a href="https://www.youtube.com/" target="_blank" aria-label="Go to personal page on YouTube">
-                    <svg width="35" height="35">
-                      <use href="/images/icons.svg#youtube"></use>
-                    </svg>
-                  </a></li>
-                <li><a href="https://www.linkedin.com/" target="_blank" aria-label="Go to personal page on LinkedIn">
-                    <svg width="35" height="35">
-                      <use href="/images/icons.svg#linkedin"></use>
-                    </svg>
-                  </a></li>
-              </ul>
-              <h3>Jane Doe</h3>
-              <p>Vice president</p>
+              <div class="team__thumb">
+                <picture>
+                  <source srcset="/images/team/vice-president-desktop@1x.webp 1x, /images/team/vice-president-desktop@2x.webp 2x"
+                    media="(min-width: 1360px)" type="image/webp">
+                  <source srcset="/images/team/vice-president-tablet@1x.webp 1x, /images/team/vice-president-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="/images/team/vice-president-mobile@1x.webp 1x, /images/team/vice-president-mobile@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                  <source srcset="/images/team/vice-president-desktop@1x.jpg 1x, /images/team/vice-president-desktop@2x.jpg 2x"
+                    media="(min-width: 1360px)" type="image/jpeg">
+                  <source srcset="/images/team/vice-president-tablet@1x.jpg 1x, /images/team/vice-president-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpeg">
+                  <source srcset="/images/team/vice-president-mobile@1x.jpg 1x, /images/team/vice-president-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" type="image/jpeg">
+                  <img src="/images/team/vice-president-desktop@1x.jpg" width="420" height="280" alt="Vice President of company">
+                </picture>
+                <ul class="social__list social__team">
+                  <li><a class="social__link" href="https://www.facebook.com/" target="_blank"
+                      aria-label="Go to personal page on Facebook">
+                      <svg class="social__icon" width="35" height="35">
+                        <use href="/images/icons.svg#facebook"></use>
+                      </svg>
+                    </a></li>
+                  <li><a class="social__link" href="https://twitter.com/" target="_blank" aria-label="Go to personal page on Twitter">
+                      <svg class="social__icon" width="35" height="35">
+                        <use href="/images/icons.svg#twitterX"></use>
+                      </svg>
+                    </a></li>
+                  <li><a class="social__link" href="https://www.youtube.com/" target="_blank"
+                      aria-label="Go to personal page on YouTube">
+                      <svg class="social__icon" width="35" height="35">
+                        <use href="/images/icons.svg#youtube"></use>
+                      </svg>
+                    </a></li>
+                  <li><a class="social__link" href="https://www.linkedin.com/" target="_blank"
+                      aria-label="Go to personal page on LinkedIn">
+                      <svg class="social__icon" width="35" height="35">
+                        <use href="/images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a></li>
+                </ul>
+              </div>              
+              <h3 class="card__subtitle">Jane Doe</h3>
+              <p class="card__text">Vice president</p>
             </li>
             <li>
-              <ul>
-                <li><a href="https://www.facebook.com/" target="_blank" aria-label="Go to personal page on Facebook">
-                    <svg width="35" height="35">
-                      <use href="/images/icons.svg#facebook"></use>
-                    </svg>
-                  </a></li>
-                <li><a href="https://twitter.com/" target="_blank" aria-label="Go to personal page on Twitter">
-                    <svg width="35" height="35">
-                      <use href="/images/icons.svg#twitterX"></use>
-                    </svg>
-                  </a></li>
-                <li><a href="https://www.youtube.com/" target="_blank" aria-label="Go to personal page on YouTube">
-                    <svg width="35" height="35">
-                      <use href="/images/icons.svg#youtube"></use>
-                    </svg>
-                  </a></li>
-                <li><a href="https://www.linkedin.com/" target="_blank" aria-label="Go to personal page on LinkedIn">
-                    <svg width="35" height="35">
-                      <use href="/images/icons.svg#linkedin"></use>
-                    </svg>
-                  </a></li>
-              </ul>
-              <h3>Steve Smith</h3>
-              <p>Marketing head</p>
+              <div class="team__thumb">
+                <picture>
+                  <source srcset="/images/team/marketing-head-desktop@1x.webp 1x, /images/team/marketing-head-desktop@2x.webp 2x"
+                    media="(min-width: 1360px)" type="image/webp">
+                  <source srcset="/images/team/marketing-head-tablet@1x.webp 1x, /images/team/marketing-head-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="/images/team/marketing-head-mobile@1x.webp 1x, /images/team/marketing-head-mobile@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                  <source srcset="/images/team/marketing-head-desktop@1x.jpg 1x, /images/team/marketing-head-desktop@2x.jpg 2x"
+                    media="(min-width: 1360px)" type="image/jpeg">
+                  <source srcset="/images/team/marketing-head-tablet@1x.jpg 1x, /images/team/marketing-head-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpeg">
+                  <source srcset="/images/team/marketing-head-mobile@1x.jpg 1x, /images/team/marketing-head-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" type="image/jpeg">
+                  <img src="/images/team/marketing-head-desktop@1x.jpg" width="420" height="280" alt="Marketing Head of company">
+                </picture>
+                <ul class="social__list social__team">
+                  <li><a class="social__link" href="https://www.facebook.com/" target="_blank"
+                      aria-label="Go to personal page on Facebook">
+                      <svg class="social__icon" width="35" height="35">
+                        <use href="/images/icons.svg#facebook"></use>
+                      </svg>
+                    </a></li>
+                  <li><a class="social__link" href="https://twitter.com/" target="_blank" aria-label="Go to personal page on Twitter">
+                      <svg class="social__icon" width="35" height="35">
+                        <use href="/images/icons.svg#twitterX"></use>
+                      </svg>
+                    </a></li>
+                  <li><a class="social__link" href="https://www.youtube.com/" target="_blank"
+                      aria-label="Go to personal page on YouTube">
+                      <svg class="social__icon" width="35" height="35">
+                        <use href="/images/icons.svg#youtube"></use>
+                      </svg>
+                    </a></li>
+                  <li><a class="social__link" href="https://www.linkedin.com/" target="_blank"
+                      aria-label="Go to personal page on LinkedIn">
+                      <svg class="social__icon" width="35" height="35">
+                        <use href="/images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a></li>
+                </ul>
+              </div>              
+              <h3 class="card__subtitle">Steve Smith</h3>
+              <p class="card__text">Marketing head</p>
             </li>
           </ul>
         </section>
-        <section class="contact" id="contact">
-          <h2>Request callback</h2>
-          <form action="1">
-            <input type="text" placeholder="Enter your name">
-            <input type="text" placeholder="Enter email*">
-            <button type="submit">Send</button>
-          </form>
+        <section class="container contact" id="contact">
+          <picture>
+            <source srcset="/images/contact/desktop@1x.webp 1x, /images/contact/desktop@2x.webp 2x"
+              media="(min-width: 1360px)" type="image/webp">
+            <source srcset="/images/contact/tablet@1x.webp 1x, /images/contact/tablet@2x.webp 2x"
+              media="(min-width: 768px)" type="image/webp">
+            <source srcset="/images/contact/mobile@1x.webp 1x, /images/contact/mobile@2x.webp 2x"
+              media="(max-width: 767px)" type="image/webp">
+            <source srcset="/images/contact/desktop@1x.jpg 1x, /images/contact/desktop@2x.jpg 2x"
+              media="(min-width: 1360px)" type="image/jpeg">
+            <source srcset="/images/contact/tablet@1x.jpg 1x, /images/contact/tablet@2x.jpg 2x"
+              media="(min-width: 768px)" type="image/jpeg">
+            <source srcset="/images/contact/mobile@1x.jpg 1x, /images/contact/mobile@2x.jpg 2x"
+              media="(max-width: 767px)" type="image/jpeg">
+            <img src="/images/contact/desktop@1x.jpg" width="680" height="460" alt="Company employee at laptop">
+          </picture>
+          <div class="contact__wrapper">
+            <h2>Request callback</h2>
+            <form action="1">
+              <input type="text" placeholder="Enter your name">
+              <input type="text" placeholder="Enter email*">
+              <button type="submit">Send</button>
+            </form>
+          </div>          
         </section>
       </main>
-    <footer>
-      <ul>
-        <li><a href="https://www.facebook.com/" target="_blank" aria-label="Go to company page on Facebook">
-          <svg width="35" height="35">
+    <footer class="container footer">
+      <ul class="social__list">
+        <li><a class="social__link" href="https://www.facebook.com/" target="_blank" aria-label="Go to company page on Facebook">
+          <svg class="social__icon" width="35" height="35">
             <use href="/images/icons.svg#facebook"></use>
           </svg>
         </a></li>
-        <li><a href="https://twitter.com/" target="_blank" aria-label="Go to company page on Twitter">
-          <svg width="35" height="35">
+        <li><a class="social__link" href="https://twitter.com/" target="_blank" aria-label="Go to company page on Twitter">
+          <svg class="social__icon" width="35" height="35">
             <use href="/images/icons.svg#twitterX"></use>
           </svg>
         </a></li>
-        <li><a href="https://www.youtube.com/" target="_blank" aria-label="Go to company page on YouTube">
-          <svg width="35" height="35">
+        <li><a class="social__link" href="https://www.youtube.com/" target="_blank" aria-label="Go to company page on YouTube">
+          <svg class="social__icon" width="35" height="35">
             <use href="/images/icons.svg#youtube"></use>
           </svg>
         </a></li>
-        <li><a href="https://www.linkedin.com/" target="_blank" aria-label="Go to company page on LinkedIn">
-          <svg width="35" height="35">
+        <li><a class="social__link" href="https://www.linkedin.com/" target="_blank" aria-label="Go to company page on LinkedIn">
+          <svg class="social__icon" width="35" height="35">
             <use href="/images/icons.svg#linkedin"></use>
           </svg>
         </a></li>
       </ul>
-      <p>Copyright © 2024 - FinanceLedger</p>
+      <p>Copyright &copy; 2024 - FinanceLedger</p>
     </footer>
     <script type="module" src="/src/js/main.js"></script>
   </body>

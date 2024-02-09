@@ -1,2 +1,17 @@
 @import 'normalize.css';
-@import 'variables.scss';
+@import './utils/breakpoints.scss';
+@import './utils/hidden.scss';
+@import './utils/variables.scss';
+@import './base/base.scss';
+
+@import './components/social.scss';
+
+@import './layout/header.scss';
+@import './layout/hero.scss';
+@import './layout/preference.scss';
+@import './layout/proposals.scss';
+@import './layout/cases.scss';
+@import './layout/blog.scss';
+@import './layout/team.scss';
+@import './layout/contact.scss';
+@import './layout/footer.scss';
