@@ -5,7 +5,7 @@ const config = defineConfig(() => {
   return {
     plugins: [
       ViteImageOptimizer({
-        /* pass your config */
+        test: /\.(jpe?g|png|gif|tiff|webp|avif)$/i,
       }),
     ],
     base: '/finance-ledger-lending/'
