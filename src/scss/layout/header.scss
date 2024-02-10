@@ -8,7 +8,7 @@
     height: 100px;
 
     color: var(--secondary-text-color);
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: var(--header-background-color);
 
     @media screen and (min-width: $tablet) {
         padding: 20px 40px;
