@@ -1,3 +1,50 @@
 .cases {
+    padding: 50px 28px;
+
     background-color: var(--primary-background-color);
+}
+
+.cases__title {
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+.cases__subtitle {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
+        line-height: 1.65;
+    }
+}
+
+.cases__descr {
+    margin-bottom: 35px;
+
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
+}
+
+.cases__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
 }
