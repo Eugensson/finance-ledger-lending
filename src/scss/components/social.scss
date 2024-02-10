@@ -18,10 +18,11 @@
 .social__icon {
     fill: var(--secondary-text-color);
 
+
     transition: fill 250ms var(--timing-function);
 
-    &:hover,
-    &:focus {
+    .social__link:hover &,
+    .social__link:focus & {
         fill: var(--accent-text-color);
     }
 }
@@ -31,4 +32,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    stroke: var(--accent-text-color);
 }
