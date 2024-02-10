@@ -66,6 +66,13 @@
     line-height: 1.61;
     color: inherit;
 
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--logo-color);
+    }
+
     @media screen and (min-width: $tablet) {
         font-size: 18px;
         line-height: 1.57;
