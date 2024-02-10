@@ -1,0 +1,73 @@
+.header {
+    padding: 30px 20px;
+    color: var(--secondary-text-color);
+    background-color: black;
+
+    @media screen and (min-width: $tablet) {
+        padding: 20px 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 20px 50px;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    margin-bottom: 12px;
+
+    font-size: 32px;
+    line-height: 1.31;
+    color: inherit;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}
+
+.logo__icon {
+    fill: var(--logo-color);
+}
+
+.logo__accents {
+    color: var(--logo-color);
+}
+
+.nav {
+    display: block;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: $tablet) {
+        gap: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        gap: 40px;
+    }
+}
+
+.nav__link {
+    padding: 20px 0;
+
+    line-height: 1.61;
+    color: inherit;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 18px;
+        line-height: 1.57;
+    }
+}
