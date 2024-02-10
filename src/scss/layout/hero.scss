@@ -1,0 +1,105 @@
+.hero {
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 140px 20px 100px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--hero-background-color);
+    background-image: url('/images/hero/mobile@1x.jpg');
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        background-image: url('/images/hero/mobile@1x.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url('/images/hero/mobile@2x.jpg');
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        max-width: 768px;
+        padding: 410px 40px;
+        background-image: url('/images/hero/tablet@1x.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url('/images/hero/tablet@2x.jpg');
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .hero {
+        max-width: 1360px;
+        padding: 285px 50px;
+        background-image: url('/images/hero/desktop@1x.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url('/images/hero/desktop@2x.jpg');
+        }
+    }
+}
+
+.hero__text {
+    margin-bottom: 25px;
+
+    font-size: 22px;
+    line-height: 1.67;
+    text-align: center;
+    color: var(--third-text-color);
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 30px;
+    }
+}
+
+.hero__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    margin: 0 auto;
+    padding: 10px 30px;
+    width: fit-content;
+
+    color: var(--secondary-text-color);
+    background-color: var(--logo-color);
+    border: 0 solid transparent;
+    border-radius: 5px;
+
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--logo-color);
+        background-color: var(--secondary-text-color);
+
+    }
+}
+
+.hero__icon {
+    fill: var(--secondary-text-color);
+
+    transition: fill 250ms var(--timing-function);
+
+    .hero__link:hover &,
+    .hero__link:focus & {
+        fill: var(--logo-color);
+    }
+}

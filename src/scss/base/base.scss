@@ -40,12 +40,19 @@ a {
 }
 
 h1 {
+    margin: 0;
+    margin-bottom: 16px;
+
     font-weight: 300;
     font-size: 52px;
     line-height: 1.23;
-    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--third-text-color);
 
     @media screen and (min-width: $tablet) {
+        margin-bottom: 25px;
+
         font-size: 55px;
         line-height: 1.2;
     }
