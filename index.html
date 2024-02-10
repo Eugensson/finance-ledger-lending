@@ -68,10 +68,28 @@
           </ul>
         </section>
         <section class="container proposals" id="about">
-          <p>What you are looking for</p>
-          <h2>We provide bespoke solutions</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?</p>
-          <a href="" target="_blank">Read more</a>
+          <picture>
+            <source srcset="/images/proposals/desktop@1x.webp 1x, /images/proposals/desktop@2x.webp 2x" media="(min-width: 1360px)"
+              type="image/webp">
+            <source srcset="/images/proposals/tablet@1x.webp 1x, /images/proposals/tablet@2x.webp 2x" media="(min-width: 768px)"
+              type="image/webp">
+            <source srcset="/images/proposals/mobile@1x.webp 1x, /images/proposals/mobile@2x.webp 2x" media="(max-width: 767px)"
+              type="image/webp">
+            <source srcset="/images/proposals/desktop@1x.jpg 1x, /images/proposals/desktop@2x.jpg 2x" media="(min-width: 1360px)"
+              type="image/jpeg">
+            <source srcset="/images/proposals/tablet@1x.jpg 1x, /images/proposals/tablet@2x.jpg 2x" media="(min-width: 768px)"
+              type="image/jpeg">
+            <source srcset="/images/proposals/mobile@1x.jpg 1x, /images/proposals/mobile@2x.jpg 2x" media="(max-width: 767px)"
+              type="image/jpeg">
+            <img src="/images/proposals/desktop@1x.jpg" width="680" height="460" alt="Company employee at laptop">
+          </picture>
+          <div class="proposals__wrapper">
+            <p class="proposals__subtitle">What you are looking for</p>
+            <h2 class="proposals__title">We provide bespoke solutions</h2>
+            <p class="proposals__descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam
+              aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?</p>
+            <a class="proposals__link" href="" target="_blank">Read more</a>
+          </div>          
         </section>
         <section class="container cases" id="cases">
           <p>This is what we do</p>
